@@ -15,6 +15,14 @@ This project demonstrates an issue with Supabase's `signInWithOAuth` method and 
 npm install
 ```
 
+## Env vars
+
+Add a .file that looks like this:
+```
+SUPABASE_URL=<URL>
+SUPABASE_ANON_KEY=<ANON-KEY>
+```
+
 ## Running the Project
 
 To start the project, use the start script defined in package.json:
