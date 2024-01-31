@@ -62,8 +62,6 @@ function AuthComponent() {
         return;
       }
 
-      console.log("data", data);
-
       // open google oauth consent screen in a new tab
       window.open(data.url, "_blank");
     });

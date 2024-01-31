@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ProviderRedirect from "./ProviderRedirect";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AuthComponent from './AuthComponent';
 import UserContextProvider from './UserContextProvider';
+import { createRoot } from 'react-dom/client';
 
 
 function App() {
@@ -19,4 +19,5 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const rootElement = document.getElementById('root');
+createRoot(rootElement).render(<App />);
